@@ -141,3 +141,17 @@ if st.session_state.historico:
     
     csv = df.to_csv(index=False).encode('utf-8')
     st.download_button("📥 Baixar Planilha (CSV)", data=csv, file_name="meu_financeiro.csv")
+
+# --- RODAPÉ ---
+st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center;'>
+        <p style='color: gray; font-size: 0.8em;'>
+            Desenvolvido por <b>Junior</b> para fins didáticos e cálculos precisos. 🚀<br>
+            <i>Feito com Python e Streamlit</i>
+        </p>
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
